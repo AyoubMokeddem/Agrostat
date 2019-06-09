@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Agro-stat</string>
+    <string name="chapitre_2">Chapitre 1</string>
+    <string name="chapitre_1">Chapitre 1</string>
+    <string name="Title1">Lorem ipsum dolor sit amet, consectetur adipiscing</string>
+    <string name="demarer">Demarer</string>
 </resources>

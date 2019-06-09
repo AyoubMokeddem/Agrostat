@@ -1,11 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context="ayoubmokeddem.github.com.agro_stat.Courses_preview">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card">
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/chapitre1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/chapitre_1"
+                android:textAppearance="@style/chapitre"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chapitre1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily=""
+                android:text="@string/Title1"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/title1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:fontFamily="KoHo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/demarer"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card">
+
+            <TextView
+                android:id="@+id/chapitre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/chapitre_1"
+                android:textAppearance="@style/chapitre"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chapitre2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily=""
+                android:text="@string/Title1"
+                android:textSize="18sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp" />
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/title2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:fontFamily="KoHo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/demarer"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card">
+
+            <TextView
+                android:id="@+id/chapitre3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/chapitre_1"
+                android:textAppearance="@style/chapitre"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chapitre3"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily=""
+                android:text="@string/Title1"
+                android:textSize="18sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp" />
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/title3"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:fontFamily="KoHo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/demarer"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card">
+
+            <TextView
+                android:id="@+id/chapitre4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/chapitre_1"
+                android:textAppearance="@style/chapitre"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chapitre4"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily=""
+                android:text="@string/Title1"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/title4"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4"
+                android:fontFamily="KoHo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/demarer"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card">
+
+            <TextView
+                android:id="@+id/chapitre5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/chapitre_1"
+                android:textAppearance="@style/chapitre"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chapitre5"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily=""
+                android:text="@string/Title1"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/title5"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line5"
+                android:fontFamily="KoHo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/demarer"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

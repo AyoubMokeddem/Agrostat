@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="chapitre">
+        <item name="android:textColor">#C4C4C4</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:textSize"></item>
+    </style>
+
 </resources>
