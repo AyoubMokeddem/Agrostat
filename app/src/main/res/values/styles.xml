@@ -13,7 +13,6 @@
     </style>
 
     <style name="Title">
-        <item name="android:textSize"></item>
     </style>
 
 </resources>
