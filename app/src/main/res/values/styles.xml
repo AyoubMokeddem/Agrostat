@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -8,11 +8,57 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="chapitre">
-        <item name="android:textColor">#C4C4C4</item>
+    <!-- Styling the card *the RelativeLayout* that shows short information about the chapter -->
+    <style name="CoursePreview_theCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/card</item>
     </style>
 
-    <style name="Title">
+    <!-- Styling the text that contain chaptre number -->
+    <style name="CousesPreview_chaptre_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/rhodium_libre</item>
     </style>
+
+    <!--Styling the titles of chapters in the cards -->
+    <style name="CoursesPreview_Chaptre_title_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/reem_kufi</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--Styling LinearLayout inside the RelativeLayout inside the card that separate the the title of the chapter from the *reading icon* -->
+    <style name="CoursesPreview_title_nd_image_separation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- in this part of code I style the ImageView studying icon -->
+    <style name="CoursesPreview_ImageView_Studying_icon">
+        <item name="android:layout_height">@dimen/studying_icon</item>
+        <item name="android:src">@drawable/study_icon</item>
+    </style>
+
 
 </resources>

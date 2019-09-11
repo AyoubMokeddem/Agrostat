@@ -13,261 +13,124 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card">
-
-
+        <!--the first card -->
+        <RelativeLayout style="@style/CoursePreview_theCard">
 
             <TextView
                 android:id="@+id/chapitre1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:text="@string/chapitre_1"
-                android:textAppearance="@style/chapitre"
-                android:textSize="14sp"/>
+                style="@style/CousesPreview_chaptre_style"
+                android:text="@string/Chapitre_1" />
 
             <LinearLayout
-                android:id="@+id/header1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/chapitre1"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp">
+                style="@style/CoursesPreview_title_nd_image_separation"
+                android:layout_below="@id/chapitre1">
 
                 <TextView
-                    android:id="@+id/title1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily=""
-                    android:text="@string/Title1"
-                    android:textSize="16sp"
-                    android:layout_weight="4"/>
+                    style="@style/CoursesPreview_Chaptre_title_style"
+                    android:text="@string/Chapter_1_title" />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/avatar"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    style="@style/CoursesPreview_ImageView_Studying_icon" />
             </LinearLayout>
-
-
-
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card">
+
+        <!--the second card -->
+        <RelativeLayout style="@style/CoursePreview_theCard">
 
             <TextView
                 android:id="@+id/chapitre2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:text="@string/chapitre_1"
-                android:textAppearance="@style/chapitre"
-                android:textSize="14sp" />
+                style="@style/CousesPreview_chaptre_style"
+                android:text="@string/Chapitre_2" />
 
             <LinearLayout
-                android:id="@+id/header2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/chapitre2"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp">
+                style="@style/CoursesPreview_title_nd_image_separation"
+                android:layout_below="@id/chapitre2">
 
                 <TextView
-                    android:id="@+id/title2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily=""
-                    android:text="@string/Title1"
-                    android:textSize="16sp"
-                    android:layout_weight="4"/>
+                    style="@style/CoursesPreview_Chaptre_title_style"
+                    android:text="@string/Chapter_2_title" />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/avatar" />
+                    style="@style/CoursesPreview_ImageView_Studying_icon" />
             </LinearLayout>
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card">
+
+        <!--the thered card -->
+        <RelativeLayout style="@style/CoursePreview_theCard">
 
             <TextView
                 android:id="@+id/chapitre3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:text="@string/chapitre_1"
-                android:textAppearance="@style/chapitre"
-                android:textSize="14sp" />
+                style="@style/CousesPreview_chaptre_style"
+                android:text="@string/Chapitre_3" />
 
             <LinearLayout
-                android:id="@+id/header3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/chapitre3"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp">
+                style="@style/CoursesPreview_title_nd_image_separation"
+                android:layout_below="@id/chapitre3">
 
                 <TextView
-                    android:id="@+id/title3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:fontFamily=""
-                    android:text="@string/Title1"
-                    android:textSize="16sp" />
+                    style="@style/CoursesPreview_Chaptre_title_style"
+                    android:text="@string/Chapter_3_title" />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/avatar" />
+                    style="@style/CoursesPreview_ImageView_Studying_icon"/>
             </LinearLayout>
-
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card">
+
+        <!--the fourth card -->
+        <RelativeLayout style="@style/CoursePreview_theCard">
 
             <TextView
                 android:id="@+id/chapitre4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:text="@string/chapitre_1"
-                android:textAppearance="@style/chapitre"
-                android:textSize="14sp"/>
+                style="@style/CousesPreview_chaptre_style"
+                android:text="@string/Chapitre_4" />
 
             <LinearLayout
-                android:id="@+id/header4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/chapitre4"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp">
+                style="@style/CoursesPreview_title_nd_image_separation"
+                android:layout_below="@id/chapitre4">
 
                 <TextView
-                    android:id="@+id/title4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily=""
-                    android:text="@string/Title1"
-                    android:textSize="16sp"
-                    android:layout_weight="4"/>
+                    style="@style/CoursesPreview_Chaptre_title_style"
+                    android:text="@string/Chapter_4_title" />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/avatar"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    style="@style/CoursesPreview_ImageView_Studying_icon" />
             </LinearLayout>
-
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card">
+
+        <!--the fifth card -->
+        <RelativeLayout style="@style/CoursePreview_theCard">
 
             <TextView
                 android:id="@+id/chapitre5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:text="@string/chapitre_1"
-                android:textAppearance="@style/chapitre"
-                android:textSize="14sp" />
+                style="@style/CousesPreview_chaptre_style"
+                android:text="@string/Chapitre_5" />
 
             <LinearLayout
-                android:id="@+id/header5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/chapitre5"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp">
+                style="@style/CoursesPreview_title_nd_image_separation"
+                android:layout_below="@id/chapitre5">
 
                 <TextView
-                    android:id="@+id/title5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily=""
-                    android:text="@string/Title1"
-                    android:textSize="16sp"
-                    android:layout_weight="4"/>
+                    style="@style/CoursesPreview_Chaptre_title_style"
+                    android:text="@string/Chapter_5_title" />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/avatar"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    style="@style/CoursesPreview_ImageView_Studying_icon" />
             </LinearLayout>
-
         </RelativeLayout>
+
     </LinearLayout>
 </ScrollView>

@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">Agro-stat</string>
-    <string name="chapitre_2">Chapitre 1</string>
-    <string name="chapitre_1">Chapitre 1</string>
-    <string name="Title1">Lorem ipsum dolor sit amet, consectetur adipiscing</string>
-    <string name="demarer">Demarer</string>
+    <string name="Chapitre_1">Chapitre 1</string>
+    <string name="Chapitre_2">Chapitre 2</string>
+    <string name="Chapitre_3">Chapitre 3</string>
+    <string name="Chapitre_5">Chapitre 5</string>
+    <string name="Chapitre_4">Chapitre 4</string>
+    <string name="Chapter_1_title">Notion générales</string>
+    <string name="Chapter_2_title">Vocabulaire en expérimentation</string>
+    <string name="Chapter_3_title">Planification expérimentale</string>
+    <string name="Chapter_4_title">Méthodes d’échantillonnage</string>
+    <string name="Chapter_5_title">Dispositifs expérimentaux</string>
 </resources>
