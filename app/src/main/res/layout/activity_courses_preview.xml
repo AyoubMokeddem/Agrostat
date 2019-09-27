@@ -156,7 +156,8 @@
                     android:gravity="center"
                     android:background="@drawable/card_shortcut"
                     android:padding="15dp"
-                    android:layout_marginBottom="5dp">
+                    android:layout_marginBottom="5dp"
+                    android:onClick="start_the_course">
 
                     <ImageView
                         android:id="@+id/shortpath_image"
@@ -171,7 +172,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/shortcut" />
+                        android:text="@string/shortcut"
+                        android:textColor="#fff"/>
 
                 </LinearLayout>
 
