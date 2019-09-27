@@ -1,136 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context="ayoubmokeddem.github.com.agro_stat.Courses_preview">
 
+<!-- This DrawerLayout has two children at the root  -->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- This LinearLayout represents the contents of the screen  -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!--the first card -->
-        <RelativeLayout style="@style/CoursePreview_theCard">
+        <!-- The ActionBar displayed at the top -->
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/chapitre1"
-                style="@style/CousesPreview_chaptre_style"
-                android:text="@string/Chapitre_1" />
-
-            <LinearLayout
-                style="@style/CoursesPreview_title_nd_image_separation"
-                android:layout_below="@id/chapitre1">
-
-                <TextView
-                    style="@style/CoursesPreview_Chaptre_title_style"
-                    android:text="@string/Chapter_1_title" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    style="@style/CoursesPreview_ImageView_Studying_icon" />
-            </LinearLayout>
-        </RelativeLayout>
-
-
-        <!--the second card -->
-        <RelativeLayout style="@style/CoursePreview_theCard">
-
-            <TextView
-                android:id="@+id/chapitre2"
-                style="@style/CousesPreview_chaptre_style"
-                android:text="@string/Chapitre_2" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/shadow"
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <LinearLayout
-                style="@style/CoursesPreview_title_nd_image_separation"
-                android:layout_below="@id/chapitre2">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <TextView
-                    style="@style/CoursesPreview_Chaptre_title_style"
-                    android:text="@string/Chapter_2_title" />
+                <!--the first card -->
+                <RelativeLayout style="@style/CoursePreview_theCard">
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    style="@style/CoursesPreview_ImageView_Studying_icon" />
+                    <TextView
+                        android:id="@+id/chapitre1"
+                        style="@style/CousesPreview_chaptre_style"
+                        android:text="@string/Chapitre_1" />
+
+                    <LinearLayout
+                        android:id="@+id/progress_chapter1"
+                        style="@style/CoursesPreview_title_nd_image_separation"
+                        android:layout_below="@id/chapitre1">
+
+                        <TextView
+                            style="@style/CoursesPreview_Chaptre_title_style"
+                            android:text="@string/Chapter_1_title" />
+
+                        <ImageView
+                            style="@style/CoursesPreview_ImageView_Studying_icon"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:contentDescription="TODO" />
+                    </LinearLayout>
+
+                    <!--The start button -->
+                    <LinearLayout
+                        style="@style/CoursePreview_LinearLayout_startbutton"
+                        android:layout_below="@id/progress_chapter1">
+
+                        <View
+                           style="@style/CoursePreview_line"/>
+
+                        <Button
+                            android:id="@+id/start_chapter1"
+                            style="@style/CoursePreview_startButton" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <!--the second card -->
+                <RelativeLayout style="@style/CoursePreview_theCard">
+
+                    <TextView
+                        android:id="@+id/chapitre2"
+                        style="@style/CousesPreview_chaptre_style"
+                        android:text="@string/Chapitre_2" />
+
+                    <LinearLayout
+                        android:id="@+id/progress_chapter2"
+                        style="@style/CoursesPreview_title_nd_image_separation"
+                        android:layout_below="@id/chapitre2">
+
+                        <TextView
+                            style="@style/CoursesPreview_Chaptre_title_style"
+                            android:text="@string/Chapter_2_title" />
+
+                        <ImageView
+                            style="@style/CoursesPreview_ImageView_Studying_icon"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:contentDescription="TODO" />
+                    </LinearLayout>
+
+                    <!--The start button -->
+                    <LinearLayout
+                        android:layout_below="@id/progress_chapter2"
+                        style="@style/CoursePreview_LinearLayout_startbutton">
+
+                        <View
+                            style="@style/CoursePreview_line"/>
+
+                        <Button
+                            android:id="@+id/start_chapter2"
+                            style="@style/CoursePreview_startButton" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <!--the thered card -->
+                <RelativeLayout style="@style/CoursePreview_theCard">
+
+                    <TextView
+                        android:id="@+id/chapitre3"
+                        style="@style/CousesPreview_chaptre_style"
+                        android:text="@string/Chapitre_3" />
+
+                    <LinearLayout
+                        android:id="@+id/progress_chapter3"
+                        style="@style/CoursesPreview_title_nd_image_separation"
+                        android:layout_below="@id/chapitre3">
+
+                        <TextView
+                            style="@style/CoursesPreview_Chaptre_title_style"
+                            android:text="@string/Chapter_3_title" />
+
+                        <ImageView
+                            style="@style/CoursesPreview_ImageView_Studying_icon"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:contentDescription="TODO" />
+                    </LinearLayout>
+
+                    <!--The start button -->
+                    <LinearLayout
+                        android:layout_below="@id/progress_chapter3"
+                        style="@style/CoursePreview_LinearLayout_startbutton">
+
+                        <View
+                            style="@style/CoursePreview_line"/>
+
+                        <Button
+                            android:id="@+id/start_chapter3"
+                            style="@style/CoursePreview_startButton" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/card_shortcut"
+                    android:padding="15dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/shortpath_image"
+                        android:src="@drawable/take_a_shortcut"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="15dp"
+                        android:background="@drawable/circle"
+                        android:contentDescription="TODO" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shortcut" />
+
+                </LinearLayout>
+
+                <!--the fourth card -->
+                <RelativeLayout style="@style/CoursePreview_theCard">
+
+
+                    <TextView
+                        android:id="@+id/chapitre4"
+                        style="@style/CousesPreview_chaptre_style"
+                        android:text="@string/Chapitre_4" />
+
+                    <LinearLayout
+                        android:id="@+id/progress_chapter4"
+                        style="@style/CoursesPreview_title_nd_image_separation"
+                        android:layout_below="@id/chapitre4">
+
+                        <TextView
+                            style="@style/CoursesPreview_Chaptre_title_style"
+                            android:text="@string/Chapter_4_title" />
+
+                        <ImageView
+                            style="@style/CoursesPreview_ImageView_Studying_icon"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:contentDescription="TODO" />
+                    </LinearLayout>
+
+                    <!--The start button -->
+                    <LinearLayout
+                        android:layout_below="@id/progress_chapter4"
+                        style="@style/CoursePreview_LinearLayout_startbutton">
+
+                        <View
+                            style="@style/CoursePreview_line"/>
+
+                        <Button
+                            android:id="@+id/start_chapter4"
+                            style="@style/CoursePreview_startButton" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <!--the fifth card -->
+                <RelativeLayout style="@style/CoursePreview_theCard">
+
+                    <TextView
+                        android:id="@+id/chapitre5"
+                        style="@style/CousesPreview_chaptre_style"
+                        android:text="@string/Chapitre_5" />
+
+                    <LinearLayout
+                        android:id="@+id/progress_chapter5"
+                        style="@style/CoursesPreview_title_nd_image_separation"
+                        android:layout_below="@id/chapitre5">
+
+                        <TextView
+                            style="@style/CoursesPreview_Chaptre_title_style"
+                            android:text="@string/Chapter_5_title" />
+
+                        <ImageView
+                            style="@style/CoursesPreview_ImageView_Studying_icon"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:contentDescription="TODO" />
+                    </LinearLayout>
+
+                    <!--The start button -->
+                    <LinearLayout
+                        android:layout_below="@id/progress_chapter5"
+                        style="@style/CoursePreview_LinearLayout_startbutton">
+
+                        <View
+                            style="@style/CoursePreview_line"/>
+
+                        <Button
+                            android:id="@+id/start_chapter5"
+                            style="@style/CoursePreview_startButton" />
+                    </LinearLayout>
+                </RelativeLayout>
+
             </LinearLayout>
-        </RelativeLayout>
+        </ScrollView>
 
-
-        <!--the thered card -->
-        <RelativeLayout style="@style/CoursePreview_theCard">
-
-            <TextView
-                android:id="@+id/chapitre3"
-                style="@style/CousesPreview_chaptre_style"
-                android:text="@string/Chapitre_3" />
-
-            <LinearLayout
-                style="@style/CoursesPreview_title_nd_image_separation"
-                android:layout_below="@id/chapitre3">
-
-                <TextView
-                    style="@style/CoursesPreview_Chaptre_title_style"
-                    android:text="@string/Chapter_3_title" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    style="@style/CoursesPreview_ImageView_Studying_icon"/>
-            </LinearLayout>
-        </RelativeLayout>
-
-
-        <!--the fourth card -->
-        <RelativeLayout style="@style/CoursePreview_theCard">
-
-            <TextView
-                android:id="@+id/chapitre4"
-                style="@style/CousesPreview_chaptre_style"
-                android:text="@string/Chapitre_4" />
-
-            <LinearLayout
-                style="@style/CoursesPreview_title_nd_image_separation"
-                android:layout_below="@id/chapitre4">
-
-                <TextView
-                    style="@style/CoursesPreview_Chaptre_title_style"
-                    android:text="@string/Chapter_4_title" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    style="@style/CoursesPreview_ImageView_Studying_icon" />
-            </LinearLayout>
-        </RelativeLayout>
-
-
-        <!--the fifth card -->
-        <RelativeLayout style="@style/CoursePreview_theCard">
-
-            <TextView
-                android:id="@+id/chapitre5"
-                style="@style/CousesPreview_chaptre_style"
-                android:text="@string/Chapitre_5" />
-
-            <LinearLayout
-                style="@style/CoursesPreview_title_nd_image_separation"
-                android:layout_below="@id/chapitre5">
-
-                <TextView
-                    style="@style/CoursesPreview_Chaptre_title_style"
-                    android:text="@string/Chapter_5_title" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    style="@style/CoursesPreview_ImageView_Studying_icon" />
-            </LinearLayout>
-        </RelativeLayout>
+        <!-- The main content view where fragments are loaded -->
+        <FrameLayout
+            android:id="@+id/flContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
-</ScrollView>
+
+    <!-- The navigation drawer that comes from the left -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:paddingTop="10dp"
+        app:menu="@menu/drawer_view" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

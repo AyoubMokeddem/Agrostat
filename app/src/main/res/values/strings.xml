@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Agro-stat</string>
+    <string name="app_name">Agro Stat</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
     <string name="Chapitre_1">Chapitre 1</string>
     <string name="Chapitre_2">Chapitre 2</string>
     <string name="Chapitre_3">Chapitre 3</string>
@@ -10,4 +12,6 @@
     <string name="Chapter_3_title">Planification expérimentale</string>
     <string name="Chapter_4_title">Méthodes d’échantillonnage</string>
     <string name="Chapter_5_title">Dispositifs expérimentaux</string>
+    <string name="start">Demarer</string>
+    <string name="shortcut">Prend un raccourci</string>
 </resources>
